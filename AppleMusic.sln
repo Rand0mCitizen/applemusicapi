@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMusic.Cli", "src\AppleMusic.Cli\AppleMusic.Cli.csproj", "{79990F84-0E12-4B6D-97F5-5D1A467A3785}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMusic.Common", "src\AppleMusic.Common\AppleMusic.Common.csproj", "{81E04540-0A73-4B46-9E38-04EE17B81852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppleMusic.Tests", "test\AppleMusic.Tests\AppleMusic.Tests.csproj", "{9162C9D6-1FE8-4853-97AE-15E02831F457}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79990F84-0E12-4B6D-97F5-5D1A467A3785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79990F84-0E12-4B6D-97F5-5D1A467A3785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79990F84-0E12-4B6D-97F5-5D1A467A3785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79990F84-0E12-4B6D-97F5-5D1A467A3785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E04540-0A73-4B46-9E38-04EE17B81852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E04540-0A73-4B46-9E38-04EE17B81852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E04540-0A73-4B46-9E38-04EE17B81852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E04540-0A73-4B46-9E38-04EE17B81852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9162C9D6-1FE8-4853-97AE-15E02831F457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9162C9D6-1FE8-4853-97AE-15E02831F457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9162C9D6-1FE8-4853-97AE-15E02831F457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9162C9D6-1FE8-4853-97AE-15E02831F457}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {943DA5C7-556F-40E0-A26F-4D8C1111969A}
+	EndGlobalSection
+EndGlobal

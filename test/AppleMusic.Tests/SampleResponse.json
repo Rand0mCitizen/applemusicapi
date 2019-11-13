@@ -1,0 +1,50 @@
+﻿{
+  "resultCount": 2,
+  "results": [
+    {
+      "wrapperType": "collection",
+      "collectionType": "Album",
+      "artistId": 161916,
+      "collectionId": 358317593,
+      "amgArtistId": 194751,
+      "artistName": "Morcheeba",
+      "collectionName": "Big Calm",
+      "collectionCensoredName": "Big Calm",
+      "artistViewUrl": "https://music.apple.com/us/artist/morcheeba/161916?uo=4",
+      "collectionViewUrl": "https://music.apple.com/us/album/big-calm/358317593?uo=4",
+      "artworkUrl60": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/d1/d3/d9/d1d3d96d-61eb-5cc8-7838-0e67663f2231/source/60x60bb.jpg",
+      "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/d1/d3/d9/d1d3d96d-61eb-5cc8-7838-0e67663f2231/source/100x100bb.jpg",
+      "collectionPrice": 9.99,
+      "collectionExplicitness": "explicit",
+      "contentAdvisoryRating": "Explicit",
+      "trackCount": 12,
+      "copyright": "℗ 1998 China Records Manufactured and distributed by Sire Records Group",
+      "country": "USA",
+      "currency": "USD",
+      "releaseDate": "1998-03-13T08:00:00Z",
+      "primaryGenreName": "Alternative"
+    },
+    {
+      "wrapperType": "collection",
+      "collectionType": "Album",
+      "artistId": 161916,
+      "collectionId": 95754106,
+      "amgArtistId": 194751,
+      "artistName": "Morcheeba",
+      "collectionName": "Who Can You Trust?",
+      "collectionCensoredName": "Who Can You Trust?",
+      "artistViewUrl": "https://music.apple.com/us/artist/morcheeba/161916?uo=4",
+      "collectionViewUrl": "https://music.apple.com/us/album/who-can-you-trust/95754106?uo=4",
+      "artworkUrl60": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f5/c9/d7/f5c9d7d6-5ada-9397-0c47-a4a1820a1fc6/source/60x60bb.jpg",
+      "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f5/c9/d7/f5c9d7d6-5ada-9397-0c47-a4a1820a1fc6/source/100x100bb.jpg",
+      "collectionPrice": 11.99,
+      "collectionExplicitness": "notExplicit",
+      "trackCount": 20,
+      "copyright": "℗ 1998 China Records Ltd",
+      "country": "USA",
+      "currency": "USD",
+      "releaseDate": "1996-09-20T07:00:00Z",
+      "primaryGenreName": "Pop"
+    }
+  ]
+}
