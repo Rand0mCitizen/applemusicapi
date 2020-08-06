@@ -1,5 +1,5 @@
-﻿using AppleMusic.Common.Contracts;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using AppleMusic.Common.Contracts;
 
 namespace AppleMusic.Common.Helpers
 {

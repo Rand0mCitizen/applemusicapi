@@ -1,12 +1,13 @@
-﻿using AppleMusic.Common;
-using AppleMusic.Common.Contracts;
-using AppleMusic.Common.Helpers;
-using Newtonsoft.Json;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using AppleMusic.Common;
+using AppleMusic.Common.Contracts;
+using AppleMusic.Common.Helpers;
+using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 
-namespace AppleMusic.Cli.Helpers
+namespace AppleMusic.Store.App.Helpers
 {
     /// <summary>
     /// IAppleMusicClient client implementation
@@ -16,10 +17,10 @@ namespace AppleMusic.Cli.Helpers
         private readonly HttpClient _client;
         private readonly AppleMusicConfig _config;
 
-        public AppleMusicClient(HttpClient client, AppleMusicConfig config)
+        public AppleMusicClient(HttpClient client, IOptions<AppleMusicConfig> options)
         {
             _client = client;
-            _config = config;
+            _config = options.Value;
             _client.DefaultRequestHeaders.Add("User-Agent", _config.UserAgent);
         }
 

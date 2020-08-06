@@ -1,7 +1,7 @@
-using AppleMusic.Common.Contracts;
-using Newtonsoft.Json;
 using System.IO;
 using System.Reflection;
+using AppleMusic.Common.Contracts;
+using Newtonsoft.Json;
 using Xunit;
 
 namespace AppleMusic.Tests

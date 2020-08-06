@@ -1,10 +1,9 @@
-﻿using AppleMusic.Cli.Helpers;
+﻿using System;
+using System.Net.Http;
+using AppleMusic.Cli.Helpers;
 using AppleMusic.Common;
-using AppleMusic.Common.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Net.Http;
 
 namespace AppleMusic.Cli
 {
@@ -23,10 +22,11 @@ namespace AppleMusic.Cli
 
             var appConfiguration = builder.Build();
             var config = appConfiguration.GetSection("AppleMusicConfig").Get<AppleMusicConfig>();
+            var apiConfig = new ApiConfig { ApiUrl = "http://localhost:8082/api" };
 
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddTransient<ISearchResultDisplay, TableResultDisplay>();
-            serviceCollection.AddTransient<IAppleMusicClient, AppleMusicClient>(sp => new AppleMusicClient(HttpClientFactory.Create(), config));
+            serviceCollection.AddTransient<ApiClient>(sp => new ApiClient(HttpClientFactory.Create(), apiConfig));
             serviceCollection.AddTransient<AppleMusicApplication>();
             var serviceProvider = serviceCollection.BuildServiceProvider();
             var app = serviceProvider.GetRequiredService<AppleMusicApplication>();

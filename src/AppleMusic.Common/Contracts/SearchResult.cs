@@ -7,7 +7,7 @@ namespace AppleMusic.Common.Contracts
     {
         [DataMember]
         public int ResultCount { get; set; }
-        
+
         [DataMember(Name = "Results")]
         public SearchResultItem[] Items { get; set; }
     }

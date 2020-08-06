@@ -1,6 +1,6 @@
-﻿using AppleMusic.Common.Contracts;
-using System;
+﻿using System;
 using System.Linq;
+using AppleMusic.Common.Contracts;
 
 namespace AppleMusic.Cli.Helpers
 {

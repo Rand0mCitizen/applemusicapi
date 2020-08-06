@@ -1,16 +1,16 @@
-﻿using AppleMusic.Cli.Helpers;
-using AppleMusic.Common.Helpers;
-using System;
+﻿using System;
+using System.Linq;
+using AppleMusic.Cli.Helpers;
 
 namespace AppleMusic.Cli
 {
     public class AppleMusicApplication
     {
-        private readonly IAppleMusicClient _appleMusicClient;
+        private readonly ApiClient _apiClient;
         private readonly ISearchResultDisplay _resultDisplay;
-        public AppleMusicApplication(IAppleMusicClient appleMusicClient, ISearchResultDisplay resultDisplay)
+        public AppleMusicApplication(ApiClient apiClient, ISearchResultDisplay resultDisplay)
         {
-            _appleMusicClient = appleMusicClient;
+            _apiClient = apiClient;
             _resultDisplay = resultDisplay;
         }
 
@@ -26,8 +26,9 @@ namespace AppleMusic.Cli
                 }
 
                 var artist = line;
-                var result = _appleMusicClient.GetAlbumsByArtistAsync(artist).Result;
-                _resultDisplay.Display(artist, result);
+                var result = _apiClient.GetAlbumsByArtistAsync(artist).GetAwaiter().GetResult();
+                //_resultDisplay.Display(artist, result);
+                Console.WriteLine(string.Join(',', result.Select(r => r.Title)));
             }
         }
     }

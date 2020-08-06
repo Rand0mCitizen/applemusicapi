@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <StartupObject>AppleMusic.Cli.Program</StartupObject>
   </PropertyGroup>
 
@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AppleMusic.Common\AppleMusic.Common.csproj" />
+    <ProjectReference Include="..\AppleMusic.Domain\AppleMusic.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
