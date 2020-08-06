@@ -1,6 +1,7 @@
 using AppleMusic.Common;
 using AppleMusic.Common.Helpers;
 using AppleMusic.Domain.Model;
+using AppleMusic.Store.App;
 using AppleMusic.Store.App.DataContext;
 using AppleMusic.Store.App.Helpers;
 using AppleMusic.Store.App.Service;

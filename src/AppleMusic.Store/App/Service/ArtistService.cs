@@ -12,13 +12,11 @@ namespace AppleMusic.Store.App.Service
 {
     public class ArtistService : IArtistService
     {
-        private readonly EfContext _dbContext;
         private readonly IArtistRepository _artistRepository;
         private readonly IAppleMusicClient _appleMusicClient;
 
-        public ArtistService(EfContext dataContext, IArtistRepository repository, IAppleMusicClient appleMusicClient)
+        public ArtistService(IArtistRepository repository, IAppleMusicClient appleMusicClient)
         {
-            _dbContext = dataContext;
             _artistRepository = repository;
             _appleMusicClient = appleMusicClient;
         }

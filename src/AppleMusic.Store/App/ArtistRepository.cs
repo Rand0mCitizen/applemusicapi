@@ -7,7 +7,7 @@ using AppleMusic.Domain.Model;
 using AppleMusic.Store.App.DataContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace AppleMusic.Store
+namespace AppleMusic.Store.App
 {
     public class ArtistRepository : IArtistRepository
     {
